@@ -7,7 +7,7 @@ namespace EmployeeWage
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Employee Wage Program");
-            MonthlyWageWithInLimit monthlyWage = new MonthlyWageWithInLimit();
+            EmployeeWageClassVariable monthlyWage = new EmployeeWageClassVariable();
             monthlyWage.WageForMonth();
         }
     }

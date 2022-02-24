@@ -7,8 +7,8 @@ namespace EmployeeWage
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Employee Wage Program");
-            EmployeeWageUsingSwitchCase dailyWage = new EmployeeWageUsingSwitchCase();
-            dailyWage.CalculateDailyWage();
+            MonthyWage monthlyWage = new MonthyWage();
+            monthlyWage.CalculateWageForMonth();
         }
     }
 }

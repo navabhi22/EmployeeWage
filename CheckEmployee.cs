@@ -8,7 +8,10 @@ namespace EmployeeWage
 {
     public class CheckEmployee
     {
-       public static int IsPresent = 1;
+        /// <summary>
+        /// Check if Employee Present or Absent.
+        /// </summary>
+        public static int IsPresent = 1;
         public void CheckEmployeePresentOrNot()
         {
             Random random = new Random();

@@ -7,8 +7,8 @@ namespace EmployeeWage
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Employee Wage Program");
-            CalculateDailyWage dailyWage = new EmployeeWage.CalculateDailyWage();
-            dailyWage.DailyWageCalculated();
+            AddPartTime dailyWage = new AddPartTime();
+            dailyWage.CalculateDailyWage();
         }
     }
 }

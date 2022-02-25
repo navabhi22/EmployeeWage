@@ -6,9 +6,10 @@ namespace EmployeeWage
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Employee Wage Program");
-            EmployeeWageClassVariable monthlyWage = new EmployeeWageClassVariable();
-            monthlyWage.WageForMonth();
+            Console.WriteLine("enter the number of companies");
+            int num = Convert.ToInt32(Console.ReadLine());
+            ForMultipleCompanies wage = new ForMultipleCompanies();
+            wage.WagesForMultipleCompanies(num);
         }
     }
 }

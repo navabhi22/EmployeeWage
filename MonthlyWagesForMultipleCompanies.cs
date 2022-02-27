@@ -20,7 +20,7 @@ namespace EmployeeWage
         public const int IsPartTime = 2;
         public const int PartTimeHour = 4;
         public const int FullDayHour = 8;
-        public void WageForMonth(int WagePerHour, int MaxWorkingDays, int WorkingHourPerMonth )
+        public void WageForMonth(string company, int WagePerHour, int MaxWorkingDays, int WorkingHourPerMonth )
         {
             int TotalWorkingHour = 0;
             while (TotalWorkingDay < MaxWorkingDays && TotalWorkingHour < WorkingHourPerMonth)
@@ -48,6 +48,7 @@ namespace EmployeeWage
                 TotalWorkingDay++;
 
             }
+            Console.WriteLine("For" + company);
             Console.WriteLine("Total Working Hour" + TotalWorkingHour);
             Console.WriteLine("Monthly wage of employee is " + TotalWage);
         }

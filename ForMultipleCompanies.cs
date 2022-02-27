@@ -13,7 +13,7 @@ namespace EmployeeWage
             
             for ( int i = 0; i < NumberOfCompanies; i++ )
             {
-                Console.WriteLine("Welcome to Employee Wage Program for moltiple Companies");
+                Console.WriteLine("Welcome to Employee Wage Program for multiple Companies");
                 Console.WriteLine("Enter the Name of company");
                 string company = Console.ReadLine();
                 Console.WriteLine("Enter the wage rate of {0} company", company);
@@ -24,7 +24,8 @@ namespace EmployeeWage
                 int MaxWorkingHour = Convert.ToInt32(Console.ReadLine());
 
                 MonthlyWagesForMultipleCompanies monthlyWage = new MonthlyWagesForMultipleCompanies();
-                monthlyWage.WageForMonth(WagePerHour, MaxWorkingDays, MaxWorkingHour);
+                monthlyWage.WageForMonth(company, WagePerHour, MaxWorkingDays, MaxWorkingHour);
+                
             }
         }
     }

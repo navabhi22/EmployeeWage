@@ -10,6 +10,8 @@ namespace EmployeeWage
             int num = Convert.ToInt32(Console.ReadLine());
             ForMultipleCompanies wage = new ForMultipleCompanies();
             wage.WagesForMultipleCompanies(num);
+
         }
+            
     }
 }

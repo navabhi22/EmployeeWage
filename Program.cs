@@ -2,15 +2,16 @@
 
 namespace EmployeeWage
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("enter the number of companies");
-            int num = Convert.ToInt32(Console.ReadLine());
-            ForMultipleCompanies wage = new ForMultipleCompanies();
-            wage.WagesForMultipleCompanies(num);
-
+            EmployeeWageBuilderObject dMart = new EmployeeWageBuilderObject("dMart",30,25,120);
+            EmployeeWageBuilderObject Parle = new EmployeeWageBuilderObject("Parle", 30, 25, 120);
+            dMart.ComputeEmpWage();
+            Console.WriteLine(dMart.ToString());
+            Parle.ComputeEmpWage();
+            Console.WriteLine(Parle.ToString());
         }
             
     }
